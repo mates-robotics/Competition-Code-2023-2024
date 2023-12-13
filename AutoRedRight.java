@@ -16,10 +16,10 @@ import com.qualcomm.robotcore.hardware.TouchSensor;
 
 
 
-@Autonomous(name = "AutoBlueLeft")
+@Autonomous(name = "AutoRedRight")
 
 
-public class AutoBlueLeft extends LinearOpMode{
+public class AutoRedRight extends LinearOpMode{
 
 
     /// Establishes the "robot" object from the "RobotMap" class
@@ -37,7 +37,7 @@ public class AutoBlueLeft extends LinearOpMode{
         // Wait for driver to hit PLAY
         waitForStart();
         robot.servo1.setPosition(0.05);
-        methods.strafe(26, 1000);
+        methods.strafe(-26, 1000);
         methods.extend_precise(-85);
         //robot.extender.setVelocity(500000);
         methods.drive(42, 1000);
